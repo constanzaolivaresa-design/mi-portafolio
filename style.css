@@ -85,13 +85,15 @@ body {
 }
 
 .hexagon {
-  width: 250px;
-  height: 250px;
-  background: white;
+  width: 260px;
+  height: 260px;
+  background: white; /* interior limpio */
+  
   clip-path: polygon(
     25% 5%, 75% 5%,
     100% 50%, 75% 95%,
     25% 95%, 0% 50%
   );
+
   border: 3px solid #a78bfa;
 }
