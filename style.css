@@ -6,28 +6,55 @@ body {
 }
 
 /* NAVBAR */
+/* NAVBAR OSCURO */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
-  background: #e9d5ff; /* lila claro */
+  align-items: center;
+  padding: 25px 60px;
+  background: #0f172a; /* oscuro elegante */
 }
 
+/* LOGO */
 .logo {
   font-weight: bold;
-  color: #4c1d95;
+  color: #a78bfa;
 }
 
+/* MENÚ */
 .navbar ul {
   display: flex;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
 }
 
+/* LINKS */
 .navbar a {
   text-decoration: none;
-  color: #1e1b4b; /* oscuro elegante */
-  font-weight: bold;
+  color: #cbd5f5;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* EFECTO HOVER (subrayado animado) */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #a78bfa;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }
 
 /* HERO */
